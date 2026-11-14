@@ -18,6 +18,8 @@ Nothing tells the user or the author. This tool checks mods against a real Zen r
 It runs three ways: as a **CLI** for mod authors, as a **GitHub Action** on every pull request,
 and as a **daily scan of the whole theme store** with a public dashboard and badges.
 
+![A pull request annotated by zen-mod-health: "#translation-button does not exist in this Zen version. Did you mean #translations-button?"](docs/images/pr-annotation.png)
+
 ## Check your mod
 
 ```sh
@@ -78,6 +80,8 @@ between runs.
 CI scans every mod in the [Zen theme store](https://github.com/zen-browser/theme-store) daily
 against the latest release and publishes a dashboard to GitHub Pages: status filters, search,
 per-mod details with line numbers and fixes, and a link to each mod.
+
+[![The zen-mod-health dashboard: 1 broken, 9 degraded and 67 healthy mods, with a searchable list of mods and their scores](docs/images/dashboard.png)](https://parikshit0411.github.io/zen-mod-health/)
 
 Every mod gets a badge at `badges/<mod-id>.svg`. The dashboard shows the Markdown to paste into a
 mod's README:
