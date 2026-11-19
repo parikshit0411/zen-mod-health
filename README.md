@@ -65,7 +65,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: parikshit0411/zen-mod-health@v1
         with:
           path: chrome.css        # file(s) or folder(s), space-separated
